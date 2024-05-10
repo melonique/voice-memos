@@ -1,4 +1,3 @@
 # Voice memo
 
-- bring your own key
-- uses vercer ai sdk
+- bring your own azure ai keys sorry folks its not openai
