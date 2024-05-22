@@ -48,13 +48,34 @@ export function StopIcon(props) {
       width="80"
       height="80"
       viewBox="0 0 80 80"
-      fill="none"
-      stroke="currentColor"
+      fill="currentColor"
+      stroke="none"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <rect x="10" y="10" width="80" height="80" rx="10" ry="10" />
+      <rect x="10" y="10" width="60" height="60" rx="10" ry="10" />
     </svg>
   )
 }
+
+
+
+export function LoadingSpinner({className, ...props}) {
+  return (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={`animate-spin ${className}`}
+  >
+    <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+  </svg>
+)}
