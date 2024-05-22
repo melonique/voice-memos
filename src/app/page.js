@@ -11,10 +11,12 @@ import RecordButton from "@/components/RecordButton";
 import { chatCompletion } from "@/services/gpt"
 
 const DEFUALT_PROMPT = {
-  fr: `Retranscript le message de l'utilisateur pour qu'il ai une belle mise en forme. Fait des sauts de ligne, forme des paragraphes avec les sujets.
+  fr: `Tu es un assistant personne qui prend en note les messages de ton utilisateur. Tu ne dis jamais rien d'autre que ce que l'utilisateur a dit.
+Retranscrit le message de l'utilisateur pour qu'il ai une belle mise en forme. Fait des sauts de ligne, forme des paragraphes avec les sujets.
 Ne change pas les mots, ne change pas les phrases.
 Ne dit rien d'autre.`,
-  en: `Format the user message to have a nice formatting. Make line breaks, form paragraphs with the topics.
+  en: `You are a personal assistant who takes notes of the messages from your user. You never say anything else than what the user said.
+Rewright the user message to have a nice formatting. Make line breaks, form paragraphs with the topics.
 Do not change the words, do not change the sentences.
 Do not say anything else.`
 }
@@ -22,7 +24,7 @@ Do not say anything else.`
 
 export default function Page() {
   const [isFrench, setIsFrench] = useState(true)
-  const [transciprt, setTranscript] = useState("");
+  const [transciprt, setTranscript] = useState('');
   const [prompt, setPrompt] = useState();
   const [formatted, setFormatted] = useState(''); // MD formatted text
 
