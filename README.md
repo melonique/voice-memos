@@ -12,5 +12,4 @@ npm run dev
 ```
 
 ## Todo
--[] move chat call to the backend
 -[] allow openai
